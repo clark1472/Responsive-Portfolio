@@ -1,275 +1,236 @@
+/* ================ Navbar header all three pages =========== */
+.navbar {
+  background: white;
+  border-bottom: 2px solid grey;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#myName {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  float: left;
+  width: 300px;
+  height: 90px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 75px;
+  background: #4aaaa5;
+  margin-left: 50px;
+  
+ }
+ 
+ .nav-link {
+   text-align: center;
+   margin: 25px 0;
+   padding: 0;
+   background: white;
+   color: grey;
+   border-left: 1px solid grey;
+   display: inline-block;
+   font-size: 20px;
+ }
+
+#contact {
+  margin-right: 20px;
+}
+
+ /* Like this feature includes padding and border in total width & height NICE */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* ============== About Me specifics =============== */
+
+  /* for about me photo */
+#about-image {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 10px 0;
+  clear: both;
+}  
+
+p {
+  float: left;
+  clear: both;
+  word-wrap: normal;
+  display: block;
+}
+
+#aboutContainer {
+  width: 100%;
+  max-width: 960px;
+  margin: 30px 0 300px 50px;
+  padding: 30px;
+  background-color: white;
+  clear: both;
+}
+
+  /* ============= portfolio  specifics =============== */
+
+ #portContainer {
+    width: 100%;
+    max-width: 960px;
+    margin: 30px 0 30px 50px;
+    padding: 30px;
+    background-color: white;
+    clear: both;
+  }
+
+
+  /* ============= contact specifics ================== */
+
+ #contactContainer {
+  width: 100%;
+  max-width: 960px;
+  margin: 30px 0 180px 50px;
+  padding: 30px;
+  background-color: white;
+  clear: both;
+}
+  
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 34px;
-  color: #777777;
   background: url("../images/concrete_seamless.png");
-}
+} 
 
-* {
-  box-sizing: border-box;
-}
-
-/* general */
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
+hr {
+  border-top-width: 3px;
 }
 
 h1 {
-  padding-bottom: 20px;
-  font-size: 30px;
-  line-height: 49px;
-  border-bottom: 3px solid #dddddd;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
 }
 
-h2,
 h3 {
-  font-size: 22px;
-}
-
-/* header */
-
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: #ffffff;
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
-}
-
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 30px;
+  margin-top: 10px;
   font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
+  box-sizing: border-box;
+  background-color: #4aaaa5;
+  color: white;
 }
 
-nav {
-  float: right;
-  margin-top: 25px;
+.row {
+  width: 100%;
+  padding: 30px;
+  margin: 30px 0;   
+  background: #ffffff;
 }
 
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
+.block {
+ background-color: white;
+ padding: 30px;
+ max-width: 980px;
+ }
+
+.block-header {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
-nav a:first-child {
-  border-left: 0 none;
+.btn-info {
+  background-color: #4aaaa5;
 }
-
-/* footer */
 
 footer {
-  padding: 30px 0;
   clear: both;
-  font-size: 12px;
+  padding: 30px 0;
   color: #ffffff;
-  color: #cccccc;
-  text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
-  height: 50px;
-}
-
-h3, h2 {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-  border-bottom: 2px solid #eeeeee;
-}
-
-/* main */
-
-#main-container {
-  padding-top: 130px;
-  min-height: calc(100vh - 70px);
-}
-
-.main-section {
-  float: left;
-  width: 100%;
-  max-width: 960px;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
-}
-
-/* portfolio page */
-
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
+  margin: auto;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+/* ========== portfolio items ============*/
+.port {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
 }
 
-/* contact page */
+.text-block {
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+  left: 15px;
+  text-align: center;
+  background-color: #4aaaa5;
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+}  
 
-#contact-form ul {
-  margin-bottom: 20px;
-}
-
-#contact-form li {
-  margin-bottom: 10px;
-}
-
-label,
-input[type=text],
-input[type=email],
-textarea {
-  display: block;
+.img-responsive{
+  margin-bottom: 30px;
+  max-width: 100%;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
-textarea {
-  height: 35px;
-  padding: 0 10px;
-  font-size: 14px;
-  border: 1px solid #dddddd;
+ /* contact page  */
+article {
+  max-width: 100%;
 }
 
-textarea {
-  height: 200px;
-}
+/* ======= breakpoint html page ======  */
 
-input[type=submit] {
-  padding: 10px 30px;
-  font-size: 18px;
-  color: #ffffff;
-  cursor: pointer;
-  background: #4aaaa5;
-  border: 0 none;
-}
-
-/* MEDIA QUERIES */
-
-
-
-/*this is for a desktop*/
-@media screen and (max-width: 980px){
-
-  .pageLinks {
-  margin-right: 5%;
-  } 
-
-  .main-section {
-  width: 70%;
+/* this it the name in navbar only */
+@media only screen and (max-width: 630px) {
+  a #myName .navbar-brand {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    max-width: 629px;
   }
+}
 
+/* this is the whole navbar */
+@media only screen and (max-width:630px) {
+ nav .navbar {
+  word-wrap: break-word;
  } 
-
-/*this is for a tablet*/
-@media screen and (max-width: 768px){
-
-   .pageLinks {
-    margin-right: 5%;
-  }
-
 }
 
-/* this is for a mobile phone */
-@media screen and (max-width: 640px){
-
-  .header {
-    position: static;
-  }
-
-  #logo {
+/* this is the 3 tabs on right of page */
+@media only screen and (max-width: 630px) {
+  div.collapse .navbar-collapse {
     width: 100%;
-  } 
-
-  .pageLinks {
-    margin-right: 25%;
-  }
-  
-  .work {
-    float: left;
-    width: 100%;
-  }
-
-  .auth-image {
-    width: 100%;
-  }
-
-  .clearfix::after {
-    display: block;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    max-width: 629px;
+    border-collapse: separate;
+    display: inline-block;
     clear: both;
-    content: "";
+    text-align: center;
+    
   }
- 
+}
+
+@media only screen and (max-width: 630px) {
+  .navbar-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    max-width: 630px;
+
+    display: inline-block;
+    clear: both;
+    text-align: center;
+    
+  }
 }
