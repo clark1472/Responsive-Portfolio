@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
 }
 
 #myName {
@@ -184,16 +185,16 @@ article {
   max-width: 100%;
 }
 
-/* ======= breakpoint html page ======  */
+/* ========== media queries =========  */
 
 /* this it the name in navbar only */
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 640px) {
   a #myName .navbar-brand {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 90px;
-    max-width: 629px;
+    /* max-width: 629px; */
   }
 }
 
