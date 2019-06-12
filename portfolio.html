@@ -4,8 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -19,15 +18,14 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-white">
-    <div class="navigation">
+  <nav class="navbar navbar-light bg-white">
+    <div>
       <a class="navbar-brand" href="index.html" id="myName">Christine Clark</a>
-    </div>
-    <!--navigation -->
-
+    </div>  <!--navbar my name -->
+    
     <!-- navbar for about, portfolio and contact -->
-    <div class="collapse navbar-collapse flex-row-reverse">
-      <ul class="navbar-nav ">
+    <div>
+      <ul class="nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link" href="index.html">About</a>
         </li>
@@ -37,56 +35,65 @@
         <li class="nav-item ">
           <a class="nav-link" id="contact" href="contact.html">Contact</a>
         </li>
-      </ul> <!--navbar for about, portfolio and contact -->
-    </div>  <!--collapse -->
+      </ul> 
+    </div>  <!--navbar for about, portfolio and contact -->
   </nav>  <!--nav bar box -->
 
-  <!--container-->
+ <!-- ============= container ==============================-->
   <div class="container" id="portContainer">
-    <h1 class="port">Portfolio</h1>
+        <div class="row">
+            <div class="col">
+                <h1 class="block-header">Portfolio</h1>
+            </div>  <!--this is column-->
+        </div>  <!--this is row-->
     
     <hr />  <!--horizonal line in whitebox-->
 
-    <div class="row">
+    <div class="row two">
 
-      <div class="col-sm-12 col-md-6">
+      <div class="col two col-sm-12 col-md-6">
         <img src="assets/images/technics-q-c-640-480-1.jpg" class="img-responsive" alt="Word Guess">
         <div class="text-block">
           <h3>Word Guess</h3>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6">
+      <div class="col two col-sm-12 col-md-6">
         <img src="assets/images/technics-q-c-640-480-2.jpg" class="img-responsive" alt="RPG Game">
         <div class="text-block">
           <h3>RPG Game</h3>
         </div>
       </div>
+    </div>  <!--row-->
 
-      <div class="col-sm-12 col-md-6">
+  <div class="row three">
+      <div class="col col-sm-12 col-md-6">
         <img src="assets/images/technics-q-c-640-480-5.jpg" class="img-responsive" alt="Trivia Game">
         <div class="text-block">
           <h3>Trivia Game</h3>
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-6">
+      <div class="col col-sm-12 col-md-6">
         <img src="assets/images/technics-q-c-640-480-7.jpg" class="img-responsive" alt="Rutgers Info Widget">
         <div class="text-block">
           <h3>Rutgers Info Widget</h3>
         </div>
       </div>
+  </div>  <!--row-->
 
-      <div class="col-sm-12 col-md-6">
+  <div class="row four">
+      <div class="col col-sm-12 col-md-6">
         <img src="assets/images/technics-q-c-640-480-9.jpg" class="img-responsive" alt="Rock Paper Scissors">
         <div class="text-block">
           <h3>Rock Paper Scissors</h3>
         </div> <!--text-block-->
       </div>  <!--size of image-->
-    </div>  <!--row-->
+  </div>  <!--row-->
+
   </div>  <!--container-->
 
-  <footer class="footer text-center">
+  <footer class="container-fluid text-center">
     &copy Copyright 2019
   </footer>
 

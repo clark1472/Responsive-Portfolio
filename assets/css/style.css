@@ -1,11 +1,9 @@
-/* ================ Navbar header all three pages =========== */
+/* ======== Navbar header all three pages ======== */
 .navbar {
-  background: white;
   border-bottom: 2px solid grey;
   width: 100%;
   margin: 0;
   padding: 0;
-
 }
 
 #myName {
@@ -19,14 +17,13 @@
   color: white;
   line-height: 75px;
   background: #4aaaa5;
-  margin-left: 50px;
+  margin-left: 20px;
   
  }
  
- .nav-link {
-   text-align: center;
-   margin: 25px 0;
-   padding: 0;
+.nav-item {
+   margin: 10px 10px 10px 0;
+   padding-left: 10px;
    background: white;
    color: grey;
    border-left: 1px solid grey;
@@ -34,8 +31,14 @@
    font-size: 20px;
  }
 
+ .nav-link { 
+   color: grey;
+   padding: 0;
+   margin: 0;
+ }
+
 #contact {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
  /* Like this feature includes padding and border in total width & height NICE */
@@ -50,47 +53,47 @@
   float: left;
   width: 200px;
   height: 200px;
-  margin: 0 20px 10px 0;
+  margin: 0;
+  /* margin: 0 20px 10px 0; */
   clear: both;
 }  
 
+#myPhoto {
+padding: 0 -15px;
+}
+
 p {
+  /* padding-left: 20px; */
+  margin: 0;
   float: left;
   clear: both;
   word-wrap: normal;
   display: block;
 }
 
-#aboutContainer {
-  width: 100%;
+.container {
+  width: 90%;
   max-width: 960px;
-  margin: 30px 0 300px 50px;
   padding: 30px;
   background-color: white;
   clear: both;
 }
 
+#aboutContainer {
+  margin: 30px 0 300px 20px;
+}
+
   /* ============= portfolio  specifics =============== */
 
  #portContainer {
-    width: 100%;
-    max-width: 960px;
-    margin: 30px 0 30px 50px;
-    padding: 30px;
-    background-color: white;
-    clear: both;
-  }
+    margin: 30px 0 30px 20px;
+}
 
 
   /* ============= contact specifics ================== */
 
  #contactContainer {
-  width: 100%;
-  max-width: 960px;
-  margin: 30px 0 180px 50px;
-  padding: 30px;
-  background-color: white;
-  clear: both;
+  margin: 30px 0 180px 20px;
 }
   
 body {
@@ -120,7 +123,13 @@ h3 {
   color: white;
 }
 
-.row {
+/* need extra padding because form takes away */
+form {
+  padding: 15px;
+}
+
+/* portfolio rows */
+.row .two .three .four{
   width: 100%;
   padding: 30px;
   margin: 30px 0;   
@@ -137,7 +146,6 @@ h3 {
   color: #4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  padding-top: 20px;
 }
 
 .btn-info {
@@ -180,58 +188,35 @@ footer {
   width: 100%;
 }
 
- /* contact page  */
-article {
-  max-width: 100%;
-}
+/* ======= breakpoint page ==========  */
 
-/* ========== media queries =========  */
-
-/* this it the name in navbar only */
-@media only screen and (max-width: 640px) {
-  a #myName .navbar-brand {
+/* ==== this is the navbar ====== */
+@media only screen and (max-width: 630px) {
+  navbar {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 90px;
-    /* max-width: 629px; */
-  }
-}
-
-/* this is the whole navbar */
-@media only screen and (max-width:630px) {
- nav .navbar {
-  word-wrap: break-word;
- } 
-}
-
-/* this is the 3 tabs on right of page */
-@media only screen and (max-width: 630px) {
-  div.collapse .navbar-collapse {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 40px;
     max-width: 629px;
     border-collapse: separate;
     display: inline-block;
     clear: both;
     text-align: center;
-    
   }
 }
 
-@media only screen and (max-width: 630px) {
-  .navbar-nav {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    max-width: 630px;
+/* ==== this is the body ====== */
 
-    display: inline-block;
-    clear: both;
-    text-align: center;
-    
+@media only screen and (max-width: 639px) {
+  #about-image {
+    width: 500px;
+    height: 500px;
   }
 }
+
+@media only screen and (min-width: 767px),  (max-width: 767px) {
+  #about-image {
+    width: 300px;
+    height: 300px;
+  }
+} 
